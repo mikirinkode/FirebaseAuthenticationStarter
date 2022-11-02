@@ -7,12 +7,46 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_user_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:transitionName="@string/user_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="User Name" />
+
+    <TextView
+        android:id="@+id/tv_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/poppins"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_id"
+        tools:text="user@mail.com" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:backgroundTint="#F62415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_email"
+        android:layout_margin="32dp"
+        android:layout_marginTop="32dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
