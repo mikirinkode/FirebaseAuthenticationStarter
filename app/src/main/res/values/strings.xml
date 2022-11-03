@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Firebase Simple Login</string>
     <string name="user_id">User ID</string>
+    <string name="empty_email">Email tidak boleh kosong</string>
+    <string name="empty_password">Password tidak boleh kosong</string>
+    <string name="pass_not_match">Password tidak cocok</string>
+    <string name="invalid_email">Format email tidak valid</string>
+    <string name="password_too_short">Password terlalu singkat</string>
 </resources>

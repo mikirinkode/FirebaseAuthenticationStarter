@@ -17,7 +17,28 @@ class LoginActivity : AppCompatActivity() {
 
         binding.apply {
             btnLogin.setOnClickListener {
+                var isValid = true
+
+                val email = edtEmailLogin.text.toString().trim()
+                val password = edtPwLogin.text.toString().trim()
+
+                if (email.isEmpty()) {
+                    edtEmailLogin.error = getString(R.string.empty_email)
+                    isValid = false
+                } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    edtEmailLogin.error = getString(R.string.invalid_email)
+                    isValid = false
+                }
+
+                if (password.isEmpty()) {
+                    edtPwLogin.error = getString(R.string.empty_password)
+                    isValid = false
+                }
+
                 // TODO: Login Logic
+                if (isValid){
+
+                }
             }
 
             btnToRegister.setOnClickListener {
